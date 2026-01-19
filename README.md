@@ -1,6 +1,8 @@
 # UXInsight Blog - Modern UI/UX Blog Website
 
 A sleek, responsive, and interactive blog website built with HTML, CSS, and JavaScript. This project focuses on delivering a premium user experience with clean typography, intuitive navigation, and smooth interactivity.
+## Live Demo
+https://navileo.github.io/Blog-Site/
 
 ## 🚀 Features
 
