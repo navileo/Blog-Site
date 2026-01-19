@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern UI/UX Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#" id="home-link">UX<span>Insight</span></a>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="#" class="nav-link active" data-category="all">Home</a></li>
+                    <li><a href="#" class="nav-link" data-category="UI Design">UI Design</a></li>
+                    <li><a href="#" class="nav-link" data-category="UX Research">UX Research</a></li>
+                    <li><a href="#" class="nav-link" data-category="Development">Development</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search blog posts...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Blog List View -->
+        <section id="blog-list" class="blog-grid">
+            <!-- Posts will be dynamically injected here -->
+        </section>
+
+        <!-- Single Post View (Hidden by default) -->
+        <section id="single-post" class="single-post-view hidden">
+            <button id="back-to-list" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Posts</button>
+            <article id="post-content">
+                <!-- Post details will be injected here -->
+            </article>
+            
+            <section class="comments-section">
+                <h3>Comments (<span id="comment-count">0</span>)</h3>
+                <div id="comments-display">
+                    <!-- Comments will be injected here -->
+                </div>
+                <div class="comment-form-container">
+                    <h4>Leave a Comment</h4>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <input type="text" id="comment-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment-message" placeholder="Your Comment" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Post Comment</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">UX<span>Insight</span></a>
+                    <p>Exploring the intersection of design, technology, and user experience.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UXInsight Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
